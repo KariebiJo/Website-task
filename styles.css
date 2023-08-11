@@ -1,0 +1,180 @@
+/* styles.css */
+
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+
+/* styles.css */
+
+.dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 5vh; /* Adjust this height as needed */
+    padding-left: 20px; /* Add padding to the left for spacing */
+    border-bottom: lightgrey solid 3px;
+}
+
+.icon {
+    width: auto; /* Adjust the width as needed */
+    height: 4vh; /* Maintain the aspect ratio */
+}
+
+.icon-name {
+    margin-left: 10px; /* Adjust the margin as needed */
+}
+
+.learn-more-box {
+    border-radius: 20px;
+    border: solid 1px white;
+    height: 400px; 
+    margin: 350px auto 0; 
+    background-image: url("leaves.jpg"); 
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.learn-more-box::before {
+    width: auto;
+    position: center;
+    border-radius: 20px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    margin-top: 404px;
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha value (0.5 for 50% transparency) */
+  }
+    
+    
+    .browse {
+    font-size: 30px;
+    line-height: 1.2; /* Adjust line height as needed */
+    white-space: normal; /* Allow text to wrap */
+    overflow: hidden; /* Hide any overflow */
+    
+}
+
+    .browse-container{
+    position: relative;
+    width: 250px;
+    top: 20%;
+    left: 10%;
+}
+
+    .smaller-words {
+    font-size: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.whitebox {
+    height: 150px;
+    width: calc(50%-20px);
+    border-radius: 20px;
+    border: solid 1px #f7f8f6;
+    position: relative;
+    z-index: 1;
+    flex-wrap: 50%;
+    margin: 10px;
+    padding: 10px;
+    flex: 30%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whitebox-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 30%;
+    position: relative;
+    bottom: 55%;
+    left: 50%;
+    
+}
+
+.whitebox img{
+    max-width: 30%;
+    max-height: 30%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.whitebox p{
+    position: relative;
+    top: 50%;
+
+}
+
+.man-image{
+    position: absolute;
+    top: 28%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    width: 225px; /* Adjust the image width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2;
+}
+
+.credit-card-image{
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Adjust the image width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2;
+}
+
+.number{
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    width: 130px; /* Adjust the image width */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 2;
+}
+
+.meet {
+    position: absolute;
+    top: 0px; /* Adjust the top position as needed */
+    left: 45%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 2;
+    pointer-events: auto; /* Allow interaction with the text box */
+}
+
+.meet-container {
+    position: relative;
+    width: 450px;
+    margin: 0 auto; /* Center the container horizontally */
+    z-index: 4;
+}
+
+.under-meet {
+    position: absolute;
+    top: 125px; /* Adjust the top position as needed */
+    left: 45%;
+    transform: translateX(-50%);
+    padding: 10px;
+    border-radius: 8px;
+    z-index: 2;
+    pointer-events: auto; /* Allow interaction with the text box */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.under-meet-container {
+    position: relative;
+    width: 450px;
+    margin: 0 auto; /* Center the container horizontally */
+    z-index: 4;
+}
