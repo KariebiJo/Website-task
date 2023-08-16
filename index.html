@@ -5,6 +5,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css">
+    <script>
+        function maintainRatio() {
+    const baseWidth = 540; // The base width you want to maintain the ratio for
+    const baseHeight = 900; // The corresponding base height
+
+    const currentWidth = window.innerWidth;
+    const scaleFactor = currentWidth / baseWidth;
+
+    const elementsToScale = document.querySelectorAll('.scale-element'); // Adjust the selector as needed
+
+    elementsToScale.forEach(element => {
+        const originalWidth = parseFloat(getComputedStyle(element).width);
+        const newWidth = originalWidth * scaleFactor;
+
+        element.style.width = `${newWidth}px`;
+        element.style.height = `${baseHeight * (newWidth / baseWidth)}px`;
+    });
+}
+
+// Call the maintainRatio function initially and whenever the window is resized
+window.addEventListener('resize', maintainRatio);
+window.addEventListener('load', maintainRatio);
+
+    </script>
 </head>
 <body>
     

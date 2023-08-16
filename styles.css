@@ -178,3 +178,82 @@ html{
     margin: 0 auto; /* Center the container horizontally */
     z-index: 4;
 }
+
+
+@media only screen and (max-width: 800px) {
+    html {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+    
+.man-image, .credit-card-image, .number {
+        display: none; /* Hide the elements */
+}
+
+.meet-container, .meet{
+   font-size: 50px;
+   width: auto;
+   padding-left: 0%;
+   margin-left: 0%;
+   border: #f5fe83 solid 5px;
+    background-color: #f5fe83;
+    border-radius: 20px;
+    
+}
+
+.under-meet, .under-meet-container{
+    margin-left: 30%;
+    bottom: 30%;
+    font-size: 100%;
+    
+}
+.learn-more-box::before{
+    display: none;
+}
+
+.learn-more-box{
+    background-image: none;
+    border: #92968a;
+}
+
+.smaller-words{
+    font-size: large;
+    border: #f5fe83 solid 5px;
+    background-color: #f5fe83;
+    border-radius: 20px;
+}
+
+.whitebox-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 50%;
+    position: relative;
+    bottom: 70%;
+    left: 60%;
+    
+}
+
+.whitebox img{
+    max-width: 30%;
+    max-height: 30%;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5fe83;
+    
+}
+
+.whitebox{
+    background-color: #f5fe83;
+}
+
+.under-meet-container{
+    display: none;
+}
+.browse{
+    border: #f5fe83 solid 5px;
+    background-color: #f5fe83;
+    border-radius: 20px;
+}
+html{
+    background-color: #92968a;
+}
